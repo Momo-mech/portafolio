@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<!-- Basic Page Needs
+	================================================== -->
+	<meta charset="utf-8">
+    <title>Formulario</title>
+    <meta name="description" content="">	
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+	================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="icon" href="images/iconos/icono yo.png" type="image/x-icon" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/iconos/icono yo.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/iconos/icono yo.png">
+	<link rel="apple-touch-icon-precomposed" href="images/iconos/icono yo.png">
+	
+	<!-- CSS
+	================================================== -->
+	
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Template styles-->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Responsive styles-->
+	<link rel="stylesheet" href="css/responsive.css">
+	<!-- FontAwesome -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- Animation -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Flexslider -->
+	<link rel="stylesheet" href="css/flexslider.css">
+	<!-- Font Awesome desde CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Font whassap -->
+    <link rel="stylesheet" href="css/whassap.css">
+	<!-- Style -->
+    <link rel="stylesheet" href="css/preset1.css">
+
+
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+	<form action="procesar-registro.php" method="post" onsubmit="return validarFormulario();"></form>
+
+	<div class="body-inner">
+	<!-- Header start -->
+	<header id="header" class="navbar-fixed-top header" role="banner">
+		<div class="container">
+			<div class="row">
+				<!-- Logo start -->
+				<div class="navbar-header">
+				    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				    </button>
+				    <div class="navbar-brand">
+					    <a href="index.html">
+					    	<img class="img-responsive" src="images/iconos/Icono_Inicial.png" alt="logo">
+					    </a> 
+				    </div>                    
+				</div><!--/ Logo end -->
+				<nav class="collapse navbar-collapse clearfix" role="navigation">
+					<ul class="nav navbar-nav navbar-right">
+
+						<li>
+                         <a href="index.html">Inicio</a>
+                        </li>
+
+                        <li>
+                         <a href="portfolio-item.html">Portafolio</a>
+                        </li>
+
+
+            			<li>
+						 <a href="Formulario.html">formulario</a>
+						</li>
+
+                    </ul>
+				</nav><!--/ Navigation end -->
+			</div><!--/ Row end -->
+		</div><!--/ Container end -->
+	</header><!--/ Header end -->
+
+    <!-- Banner area -->
+		<div id="banner-area">
+		<img src="images/Ilustraciones/Art 11.jpg" alt ="" />
+		<div class="parallax-overlay"></div>
+			<!-- Subpage title start -->
+			<div class="banner-title-content">
+	        	<div class="text-center">
+		        	<h2>Registro de Usuario</h2>
+		        	<ul class="breadcrumb">
+			            <li><a href="index.html"></a>Home</li>
+			            <li><a href=""> Formulario</a></li>
+		          	</ul>
+	          	</div>
+          	</div><!-- Subpage title end -->
+	</div><!-- Banner area end -->
+
+	<!-- Contenido -->
+	<section id="main-container">
+		<div class="container">
+			<div class="gap-40"></div>
+			<div class="row">
+	    		<div class="col-md-7">
+	    			<h3>Crear una cuenta</h3>
+	    			<form id="register-form" action="procesar-registro.php" method="post" role="form" onsubmit="return validarFormulario();">
+						<div class="form-group">
+							<label for="nombre">Nombre completo</label>
+							<input class="form-control" type="text" id="nombre" name="nombre" required>
+						</div>
+
+						<div class="form-group">
+							<label for="email">Correo electrónico</label>
+							<input class="form-control" type="email" id="email" name="email" required>
+						</div>
+
+						<div class="form-group">
+							<label for="password">Contraseña</label>
+							<input class="form-control" type="password" id="password" name="password" required>
+						</div>
+
+						<div class="form-group">
+							<label for="confirm_password">Confirmar contraseña</label>
+							<input class="form-control" type="password" id="confirm_password" name="confirm_password" required>
+						</div>
+
+						<div id="mensaje-error" style="color: red; margin-top: 10px;"></div>
+
+						<div class="form-group"><br>
+                            <a href="https://mail.google.com/mail/u/0/?to=dayanita2005yuyo@gmail.com&su=Consulta+de+proyecto&body=Hola+Dayana,+quiero+contactarte+para+un+proyecto...&fs=1&tf=cm"
+                            target="_blank" 
+                            class="btn btn-primary solid blank">
+                            Contrátame
+                            </a>
+                        </div>
+					</form>
+	    		</div>
+	    		<div class="col-md-5">
+	    			<div class="contact-info">
+		    			<h3>¿Ya tienes cuenta?</h3>
+			    		<p><a href="index.html">Inicia sesión aquí</a> si ya estás registrado.</p>
+    				</div>
+	    		</div>
+	    	</div>
+		</div>
+	</section>
+
+
+	<!-- Footer start -->
+	<footer id="footer" class="footer footer2">
+		<div class="container">
+
+			<div class="row">
+
+				<div class="col-md-4 col-sm-12 footer-widget">
+					<h3 class="widget-title">Logo</h3>
+
+					<div class="img-gallery">
+						<div class="img-container">
+							
+							<a class="thumb-holder" href="index.html">
+								<img src="images/iconos/Icono_Inicial_Morado.png" alt="">
+							</a>
+					
+						</div>
+					</div>
+
+						
+				</div><!--/ end flickr -->
+
+				<div class="col-md-4 col-sm-12 footer-widget">
+					<h3 class="widget-title">Enlaces rápidos</h3>
+
+					<ul class="unstyled arrow">
+						<li><a href="Formulario.html">Rellenar un formulario</a></li>
+						<li><a href="Formulario.html">Atención al cliente</a></li>
+						<li><a href="portfolio-item.html">Portafolio</a></li>
+						<li><a href="Formulario.html">Contacto</a></li>
+						
+					</ul>
+	
+				</div><!--/ End Recent Posts-->
+
+
+				<div class="col-md-3 col-sm-12 footer-widget footer-about-us">
+					<h3 class="widget-title">Acerca de Momomech</h3>
+					<p>Soy una artística independiente, que busca destacarse de manera más profesional en el ámbito laboral y empresarial.</p>
+					<p><strong>Dirección: </strong>1102 Saint Marys, Junction City, KS</p>
+					<div class="row">
+						<div class="col-md-6">
+							<strong>Email: </strong>
+							<p>Momo@gmail.com</p>
+						</div>
+						<div class="col-md-6">
+							<strong>Phone No.</strong>
+							<p>+(785) 238-4131</p>
+						</div>
+					</div>
+					<br/>
+					<p><a href="contact.html" class="btn btn-primary solid square">Contactar ahora<i class="fa fa-long-arrow-right"></i></a></p>
+				</div><!--/ end about us -->
+
+
+
+
+			</div><!-- Row end -->
+		</div><!-- Container end -->
+	</footer><!-- Footer end -->
+	
+
+	<!-- Footer start -->
+	<section id="copyright" class="copyright angle">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<ul class="footer-social unstyled">
+                        <li>
+                           <a title="Instagram" href="https://www.instagram.com/_momomech_/" target="_blank">
+		                      <span class="icon-pentagon wow bounceIn"><i class="fab fa-instagram"></i></span>
+	                       </a>
+	                       <a title="YouTube" href="https://www.youtube.com/channel/UCvvsyVi__ahH2VfUxCVuadQ" target="_blank">
+		                      <span class="icon-pentagon wow bounceIn"><i class="fab fa-youtube"></i></span>
+	                       </a>
+	                       <a title="TikTok" href="https://www.tiktok.com/es/" target="_blank">
+		                      <span class="icon-pentagon wow bounceIn"><i class="fab fa-tiktok"></i></span>
+	                       </a>
+                        </li>
+					</ul>
+				</div>
+			</div><!--/ Row end -->
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<div class="copyright-info">
+         			 &copy; Copyright 2025 Momomech. <span>Diseñado por<a href="https://themefisher.com">Themefisher.com</a></span>
+        			</div>
+				</div>
+			</div><!--/ Row end -->
+		   <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top affix">
+				<button class="btn btn-primary" title="Back to Top"><i class="fa fa-angle-double-up"></i></button>
+			</div>
+		</div><!--/ Container end -->
+	</section><!--/ Footer end -->
+
+
+	<!-- Javascript Files
+	================================================== -->
+	<!-- initialize jQuery Library -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<!-- Bootstrap jQuery -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<!-- Owl Carousel -->
+	<script type="text/javascript" src="js/owl.carousel.js"></script>
+	<!-- PrettyPhoto -->
+	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+	<!-- Bxslider -->
+	<script type="text/javascript" src="js/jquery.flexslider.js"></script>
+	<!-- Wow Animation -->
+	<script type="text/javascript" src="js/wow.min.js"></script>
+	<!-- Eeasing -->
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<!-- Counter -->
+	<script type="text/javascript" src="js/jquery.counterup.min.js"></script>
+	<!-- Template custom -->
+	<script type="text/javascript" src="js/custom.js"></script>
+	</div><!-- Body inner end -->
+	<script src="js/validacion.js"></script>
+</body>
+</html>
